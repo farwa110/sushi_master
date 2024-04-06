@@ -1,0 +1,144 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  background-color: rgba(250, 133, 67, 0.5);
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+.sub-menu {
+  width: 70%;
+}
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 900;
+}
+.list-item {
+  text-decoration: underline;
+  color: rgba(6, 106, 52, 1);
+}
+.menu-btn {
+  height: 40px;
+  width: 100px;
+  background-color: #066a34;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list li {
+  margin-right: 20px;
+}
+
+.menu-list li:last-child {
+  margin-right: 0;
+}
+
+.menu-list a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu-list a:hover {
+  color: #f00;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(6, 106, 52, 1);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 1300px) {
+  .menu-list a {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .header-button {
+    display: none;
+  }
+  .menu-list {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu-list {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu-list li {
+    margin: 10px 20px;
+    color: #066a34;
+  }
+
+  nav.active .menu-list a {
+    font-size: 24px;
+  }
+}

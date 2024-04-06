@@ -1,0 +1,543 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+.hero-img {
+  background-image: url("./billeder/hero-img.webp");
+
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+  width: 100%;
+}
+.hero-heading {
+  border: 1px solid #066a34;
+  height: 308px;
+  width: 30%;
+  position: relative;
+  top: 22%;
+  left: 4%;
+}
+.heading-title {
+  font-size: 67px;
+  margin-bottom: 5px;
+  font-weight: 900;
+  padding-left: 50px;
+  color: rgba(24, 127, 71, 1);
+}
+.sub-heading {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(24, 127, 71, 1);
+  padding-left: 50px;
+  margin-top: 5px;
+}
+.heading-btn {
+  height: 44px;
+  width: 128px;
+  background-color: #066a34;
+  color: white;
+  border-radius: 5px;
+  margin-left: 10%;
+}
+.sushi {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 40px 40px;
+  gap: 30px;
+}
+.sushi-text {
+  display: grid;
+  grid-template-rows: 0.1fr 1fr;
+  border: 2px solid #187f47;
+}
+.sushi-item-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 40px 40px;
+}
+.sushi-title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #187f47;
+  text-align: center;
+}
+.sushi-item__text {
+  color: #187f47;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 20px;
+  line-height: 1.5;
+  border: 1px solid rgba(250, 133, 67, 0.5);
+  margin: 0px;
+}
+.sushi-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  gap: 61px;
+  width: 50%;
+  height: 1250px;
+}
+.sushi-image {
+  width: 500px;
+}
+.chop-stick {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin: 40px 40px;
+  gap: 20px;
+}
+.stick-image {
+  width: 100%;
+  height: 100%;
+}
+.chotp-stick-title {
+  color: #187f47;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.chop-sticks-item {
+  display: grid;
+  grid-template-rows: 70px 300px;
+}
+
+@media screen and (max-width: 1500px) {
+  .hero-heading {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .sushi {
+    flex-wrap: wrap;
+  }
+  .sushi-text {
+    width: 100%;
+  }
+  .sushi-img {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .sushi-item-box {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .sushi-image {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hero-heading {
+    width: 70%;
+  }
+  .heading-title {
+    font-size: 47px;
+  }
+  .chop-stick {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 715px) {
+  .chop-stick {
+    height: 1300px;
+    margin-bottom: 20px;
+  }
+}
+
+/***************************************************************** Css for sushi-diy ***********************************************************************/
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-heading {
+  font-size: 32px;
+  margin-bottom: 70px;
+  font-weight: 900;
+  text-align: center;
+  color: rgba(24, 127, 71, 1);
+  margin-top: 70px;
+}
+.sushi-heading {
+  font-size: 20px;
+  font-weight: 605;
+  color: rgba(24, 127, 71, 1);
+  text-align: center;
+}
+.main-title {
+  padding: 20px;
+  line-height: 1.5;
+  width: 60%;
+  margin: auto;
+  border: 1px solid rgba(250, 133, 67, 0.5);
+}
+.sushi-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px auto;
+  justify-items: center;
+  align-items: center;
+}
+.sushi-box-title {
+  width: 90%;
+}
+.billede1 {
+  width: 100%;
+  height: 100%;
+}
+.sushi-img-title {
+  font-size: 20px;
+  font-weight: 605;
+  color: rgba(24, 127, 71, 1);
+  text-align: center;
+  border: 1px solid rgba(250, 133, 67, 0.5);
+  padding: 10px;
+}
+.nigri-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(6, 106, 52, 1);
+}
+
+.sushi-opskrifter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 50px 40px;
+}
+.nigri-img {
+  height: 400px;
+}
+.nigri-box {
+  box-shadow: 2px 2px 5px rgba(6, 106, 52, 1);
+  height: 300px;
+  padding: 20px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 250px;
+  justify-items: center;
+  align-items: center;
+}
+.nigri-title {
+  text-align: center;
+  color: #066a34;
+}
+.overskrift {
+  box-shadow: 2px 2px 5px rgba(6, 106, 52, 1);
+  height: 200px;
+  width: 50%;
+  padding: 20px;
+  margin: 40px auto;
+}
+
+.title-over {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(6, 106, 52, 1);
+  text-align: center;
+}
+.text-over {
+  font-size: 40px;
+  font-weight: 700;
+  color: rgba(6, 106, 52, 1);
+  text-align: center;
+}
+
+.divider {
+  margin: 40px 40px;
+  background-color: #066a34;
+  height: 5px;
+}
+.sushi-item {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  align-items: center;
+  margin: 40px 50px;
+}
+.item-main-heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgba(6, 106, 52, 1);
+  text-align: center;
+}
+.item-container {
+  border: 1px solid rgba(6, 106, 52, 1);
+  height: 100%;
+  padding: 0 20px;
+  color: rgba(6, 106, 52, 1);
+}
+.item-container p {
+  font-size: 1.5rem;
+}
+.item-container li {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.sushiitem .text {
+  inline-size: 100%;
+  height: 100%;
+  border: 1px solid green;
+}
+.sushiitem .text-wrapper {
+  padding: 2rem 0rem 0rem 2rem;
+  font-size: 18px;
+  color: #066a34;
+}
+.sushi-item-img {
+  width: 100%;
+}
+@media screen and (min-width: 1670px) {
+  .item-container p {
+    font-size: 1.5rem;
+  }
+  .item-container li {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 900px) {
+  .sushi-opskrifter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 50px 40px;
+  }
+  .overskrift {
+    height: 300px;
+  }
+  .sushi-item {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sushi-box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .sushi-opskrifter {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .overskrift {
+    width: 80%;
+  }
+}
+
+/***************************************************************** Css for sushi-resturant ***********************************************************************/
+
+.resturant-heading {
+  font-size: 32px;
+  font-weight: 900;
+  color: rgba(24, 127, 71, 1);
+  text-align: center;
+}
+
+.resturant-sub-heading {
+  color: rgba(24, 127, 71, 1);
+  border: 2px solid rgba(250, 133, 67, 0.5);
+  margin: 20px 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+.resturant-text {
+  color: rgba(24, 127, 71, 1);
+  border: 2px solid rgba(250, 133, 67, 0.5);
+  margin: 20px 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+.text-heading {
+  border: 1px solid rgba(250, 133, 67, 0.5);
+  height: 308px;
+  width: 837px;
+  position: relative;
+  top: 22%;
+  left: 4%;
+}
+
+.resturant_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 50px 50px;
+}
+
+.resturant-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 400px 200px 50px;
+}
+
+.resturant-img {
+  width: 100%;
+  height: 100%;
+}
+
+.resturant-item-heading {
+  color: rgba(24, 127, 71, 1);
+  text-align: center;
+}
+
+.resturant-item-title {
+  color: rgba(24, 127, 71, 1);
+  text-align: left;
+  display: grid;
+  align-items: center;
+  justify-items: left;
+}
+
+.resturant-link {
+  text-decoration: none;
+  color: rgba(24, 127, 71, 1);
+  text-align: center;
+  border: 1px solid rgba(250, 133, 67, 0.5);
+  padding-top: 12px;
+  border-radius: 10px;
+}
+
+.resturant-link:hover {
+  color: red;
+}
+
+@media screen and (max-width: 900px) {
+  .resturant-item {
+    grid-template-rows: 70px 400px 300px 50px;
+  }
+
+  .resturant_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/***************************************************************** contact ***********************************************************************/
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.hero-contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.hero-contact-heading {
+  color: rgba(6, 106, 52, 1);
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  border: 2px solid rgba(250, 133, 67, 0.5);
+  margin: 50px 200px;
+  padding: 25px;
+}
+.hero-contact-img {
+  width: 100%;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 500px;
+  gap: 50px;
+  justify-items: center;
+  align-items: center;
+  margin: 40px 50px;
+}
+.contact-grid-text {
+  width: 60%;
+  padding: 20px;
+  border: 2px solid rgba(250, 133, 67, 0.5);
+  height: 300px;
+}
+.contact-heading {
+  text-align: center;
+  color: rgba(6, 106, 52, 1);
+}
+.contact-text {
+  color: rgba(6, 106, 52, 1);
+}
+.contact-link {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  gap: 20px;
+}
+form {
+  max-width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid rgba(250, 133, 67, 0.5);
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+input[type="submit"] {
+  background-color: #066a34;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: red;
+}
+
+@media screen and (max-width: 990px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr;
+  }
+  .contact-grid-text {
+    height: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-contact-heading {
+    margin: 0;
+  }
+}
